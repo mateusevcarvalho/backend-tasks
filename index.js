@@ -3,6 +3,7 @@ const db = require('./config/db')
 const consign = require('consign')
 
 consign()
+    .then('./config/passaport.js')
     .then('./config/middleware.js')
     .then('./api')
     .then('./config/routes.js')
